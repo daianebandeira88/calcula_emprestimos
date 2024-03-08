@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-gray-200 flex justify-center items-center h-screen">
     <div class="w-96 bg-white p-8 rounded-lg shadow-md">
         <h2 class="text-center text-2xl font-bold">Resultado do Empréstimo</h2>
-        <p class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" >Pagamento Mensal: $<?php echo number_format($monthlyPayments, 2, '.', ''); ?></p>
-        <p class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" >Total de Juros: $<?php echo number_format($totalInterest, 2, '.', ''); ?></p>
+        <p class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" >Pagamento Mensal: R$<?php echo number_format($monthlyPayments, 2, '.', ''); ?></p>
+        <p class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" >Total de Juros: R$<?php echo number_format($totalInterest, 2, '.', ''); ?></p>
         <!-- Formulário oculto para redirecionar de volta para index.php -->
         <form action="index.php" method="get">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full mt-10">Simular Outras Condições</button>
