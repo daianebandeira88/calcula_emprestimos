@@ -17,10 +17,10 @@
         <form id="loanForm" action="processo.php" method="post" class="mt-4" onsubmit="removeMasks()">
             <label for="loan_amount">Valor do Empréstimo:</label><br>
             <!-- Aplicar máscara de moeda com jQuery Mask Money -->
-            <input type="text" id="loan_amount" name="loan_amount" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" required><br>
+            <input type="text" id="loan_amount" name="loan_amount" placeholder="R$" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" required><br>
             <label for="interest_rate">Taxa de Juros:</label><br>
             <!-- Aplicar máscara de percentual com jQuery Mask Money -->
-            <input type="text" id="interest_rate" name="interest_rate" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" required><br>
+            <input type="text" id="interest_rate" name="interest_rate" placeholder="0.0%" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" required><br>
             <label for="interest_type">Tipo de Taxa de Juros:</label><br>
             <select id="interest_type" name="interest_type" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-2" required>
                 <option value="annual">Anual</option>
@@ -28,7 +28,7 @@
             </select><br>
             <label for="loan_term">Prazo do Empréstimo (meses):</label><br>
             <!-- Aplicar máscara de número inteiro para o prazo do empréstimo -->
-            <input type="text" id="loan_term" name="loan_term" class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-4" required><br>
+            <input type="text" id="loan_term" name="loan_term" placeholder="Digite aqui..." class="border-solid border-2 border-gray-100 rounded-md w-full py-2 px-4 mb-4" required><br>
             <input type="submit" value="Calcular" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
         </form>
     </div>
